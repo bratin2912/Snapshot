@@ -1,0 +1,8 @@
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-search img{
+    width: 1.5vw;
+}
