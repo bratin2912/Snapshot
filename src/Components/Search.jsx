@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 // import logo from "../Assets/search_logo.png";
-import '../Style/Search.css';
+import './Search.css';
 import { useGlobalContext } from '../Context/Context';
 import { Link } from 'react-router-dom';
 const Search = () => {
@@ -11,13 +11,13 @@ const Search = () => {
         <div className='search'>
             <div className="main-search">
                 <input type="text" onChange={(e) => setState(e.target.value)} />
-                <Link to='/search' onClick={() => others(state)}>Search</Link>
+                <Link id="btn" to='/search' onClick={() => others(state)}>Search</Link>
             </div>
             <div className='default-search'>
-                <Link to='/mountain' onClick={mountain}>Mountain</Link>
-                <Link to='/beaches' onClick={beaches}>Beaches</Link>
-                <Link to='/bird' onClick={birds}>Birds</Link>
-                <Link to='/food' onClick={food}>Food</Link>
+                <Link id="btn" to='/mountain' onClick={mountain}>Mountain</Link>
+                <Link id="btn" to='/beaches' onClick={beaches}>Beaches</Link>
+                <Link id="btn" to='/bird' onClick={birds}>Birds</Link>
+                <Link id="btn" to='/food' onClick={food}>Food</Link>
             </div>
         </div>
     )

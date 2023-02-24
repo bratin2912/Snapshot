@@ -5,10 +5,12 @@ import { useGlobalContext } from '../Context/Context';
 const Beaches = () => {
   const { data, isLoading } = useGlobalContext();
   if (isLoading) {
-    <>
-      <Search />
-      <h1>Loading...</h1>
-    </>
+    return (
+      <>
+        <Search />
+        <h1>Loading...</h1>
+      </>
+    )
   }
 
   return (

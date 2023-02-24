@@ -23,7 +23,7 @@ const AppProvider = ({ children }) => {
 
     useEffect(() => {
         ApiCall(`${api}&method=${method}&api_key=${key}&text=${state.query}&format=${format}`)
-    }, [state.query])
+    }, [state.isLoading])
 
     const ApiCall = async (url) => {
         try {

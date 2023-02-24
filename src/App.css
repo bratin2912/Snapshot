@@ -6,8 +6,13 @@
 
 .img-container > img {
     width: 20vw;
-    height: 20vh;
+    height: 25vh;
     margin: 1vw;
     text-align: center;
     object-fit: cover;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

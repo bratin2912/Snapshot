@@ -4,10 +4,12 @@ import { useGlobalContext } from '../Context/Context';
 const Mountain = () => {
   const { data, isLoading } = useGlobalContext();
   if (isLoading) {
-    <>
-      <Search />
-      <h1>Loading...</h1>
-    </>
+      return (
+        <>
+          <Search />
+          <h1>Loading...</h1>
+        </>
+      )
   }
 
   return (
